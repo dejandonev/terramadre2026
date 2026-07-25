@@ -1,0 +1,69 @@
+.specimen {
+  min-width: 0;
+  color: #f1e8d4;
+  background: #102f27;
+}
+
+.specimen__sheet {
+  width: min(calc(100% - 4rem), 82rem);
+  margin-inline: auto;
+  padding-block: clamp(3rem, 8vw, 7rem);
+}
+
+.specimen__label,
+.specimen__note {
+  font-family: var(--font-ui);
+}
+
+.specimen__label {
+  margin-bottom: 2rem;
+  font-size: 0.75rem;
+  font-weight: 750;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.specimen h1 {
+  max-width: 12ch;
+  margin-bottom: clamp(3rem, 8vw, 6rem);
+  font-size: clamp(4rem, 8vw, 8rem);
+  font-weight: 500;
+  line-height: 0.94;
+}
+
+.specimen section {
+  padding-block: 2rem;
+  border-top: 1px solid rgba(241, 232, 212, 0.32);
+}
+
+.specimen h2 {
+  margin-bottom: 1rem;
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.specimen__glyphs,
+.specimen__words {
+  font-family: var(--font-display);
+  font-synthesis: none;
+  font-weight: 500;
+}
+
+.specimen__glyphs {
+  font-size: clamp(1.7rem, 3.2vw, 3.25rem);
+  line-height: 1.45;
+}
+
+.specimen__words {
+  max-width: 38ch;
+  font-size: clamp(1.6rem, 3vw, 3rem);
+  line-height: 1.35;
+}
+
+.specimen__note {
+  max-width: 48rem;
+  margin-top: 2rem;
+  color: rgba(241, 232, 212, 0.72);
+  font-size: 0.875rem;
+}

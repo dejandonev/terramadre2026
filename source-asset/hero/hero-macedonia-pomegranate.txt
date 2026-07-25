@@ -1,0 +1,19 @@
+Title:
+Hero image
+
+Source:
+Slow Food Macedonia
+
+Original:
+Campaign visual with text removed.
+
+Status:
+Approved for prototype.
+
+Usage:
+Homepage Hero only.
+
+Notes:
+Do not crop the face.
+Do not crop the pomegranate.
+Keep the woman on the right side.
