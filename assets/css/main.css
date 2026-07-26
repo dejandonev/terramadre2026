@@ -2880,12 +2880,13 @@ p {
 
 @media (max-width: 47.99rem) {
   .reportage-hero__copy {
+    padding-top: calc(var(--header-height) + 6.25rem);
     padding-right: 1rem;
     padding-left: 1rem;
   }
 
   .reportage-hero h1 {
-    font-size: clamp(4rem, 19vw, 5.4rem);
+    font-size: clamp(3rem, 13vw, 3.5rem);
   }
 
   .reportage-hero__byline {
