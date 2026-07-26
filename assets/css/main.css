@@ -2530,6 +2530,94 @@ p {
 }
 
 /* ==========================================================================
+   Editorial reportage teaser
+   ========================================================================== */
+
+.reportage-teaser {
+  padding-block: clamp(6rem, 10vw, 10rem);
+  background: var(--color-cream);
+}
+
+.reportage-teaser__inner {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(3rem, 8vw, 8rem);
+  align-items: center;
+}
+
+.reportage-teaser__copy {
+  max-width: 35rem;
+}
+
+.reportage-teaser__copy h2 {
+  max-width: none;
+  margin-bottom: clamp(2rem, 4vw, 3.5rem);
+  font-size: clamp(3.5rem, 5.4vw, 5.5rem);
+  line-height: 0.94;
+}
+
+.reportage-teaser__copy h2 span {
+  display: block;
+  white-space: nowrap;
+}
+
+.reportage-teaser__copy > p:not(.eyebrow) {
+  max-width: 58ch;
+  margin-bottom: 1.75rem;
+}
+
+.reportage-teaser__image {
+  margin: 0;
+}
+
+.reportage-teaser__image img {
+  width: 100%;
+  height: auto;
+  max-height: 50rem;
+  object-fit: contain;
+  object-position: center;
+}
+
+@media (max-width: 61.99rem) {
+  .reportage-teaser__inner {
+    grid-template-columns: 1fr;
+    gap: clamp(3.5rem, 7vw, 5rem);
+  }
+
+  .reportage-teaser__copy {
+    max-width: 46rem;
+  }
+
+  .reportage-teaser__image {
+    width: min(100%, 40rem);
+    justify-self: end;
+  }
+}
+
+@media (max-width: 47.99rem) {
+  .reportage-teaser {
+    padding-block: 5.5rem;
+  }
+
+  .reportage-teaser__inner {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .reportage-teaser__copy {
+    max-width: none;
+  }
+
+  .reportage-teaser__copy h2 {
+    font-size: clamp(3.2rem, 14vw, 4.5rem);
+  }
+
+  .reportage-teaser__image img {
+    max-height: none;
+  }
+}
+
+/* ==========================================================================
    Editorial long read — Terra Madre 2022
    ========================================================================== */
 
