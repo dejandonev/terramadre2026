@@ -2571,7 +2571,9 @@ p {
 }
 
 .reportage-teaser__image img {
+  display: block;
   width: 100%;
+  max-width: 100%;
   height: auto;
   max-height: 50rem;
   object-fit: contain;
@@ -2600,8 +2602,21 @@ p {
   }
 
   .reportage-teaser__inner {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin-inline: 0;
+    padding-inline: 1rem;
     grid-template-columns: 1fr;
     gap: 3.5rem;
+  }
+
+  .reportage-teaser__copy,
+  .reportage-teaser__image {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
   }
 
   .reportage-teaser__copy {
@@ -2610,6 +2625,10 @@ p {
 
   .reportage-teaser__copy h2 {
     font-size: clamp(3.2rem, 14vw, 4.5rem);
+  }
+
+  .reportage-teaser__copy h2 span {
+    white-space: normal;
   }
 
   .reportage-teaser__image img {
