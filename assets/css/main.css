@@ -2528,3 +2528,339 @@ p {
     text-decoration: underline;
   }
 }
+
+/* ==========================================================================
+   Editorial long read — Terra Madre 2022
+   ========================================================================== */
+
+.reportage-page {
+  background: var(--color-paper);
+}
+
+.reportage-hero {
+  display: grid;
+  height: clamp(45rem, 88svh, 58rem);
+  grid-template-columns: minmax(22rem, 0.78fr) minmax(28rem, 1.22fr);
+  color: var(--color-cream);
+  background: var(--color-forest-deep);
+}
+
+.reportage-hero__copy {
+  display: flex;
+  min-height: 0;
+  max-width: 43rem;
+  padding: calc(var(--header-height) + clamp(4rem, 8vw, 8rem)) clamp(2rem, 5vw, 6rem) clamp(4rem, 7vw, 7rem);
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.reportage-hero__copy .eyebrow {
+  color: color-mix(in srgb, var(--color-cream) 76%, transparent);
+}
+
+.reportage-hero h1 {
+  max-width: 8ch;
+  margin-bottom: clamp(1.75rem, 3vw, 3rem);
+  font-size: clamp(4.3rem, 7.5vw, 7.4rem);
+}
+
+.reportage-hero__deck {
+  max-width: 25ch;
+  margin-bottom: clamp(2rem, 4vw, 3.5rem);
+  color: var(--color-cream);
+  font-family: var(--font-display);
+  font-size: clamp(1.7rem, 2.5vw, 2.7rem);
+  letter-spacing: -0.015em;
+  line-height: 1.08;
+}
+
+.reportage-hero__byline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 1.4rem;
+  color: color-mix(in srgb, var(--color-cream) 72%, transparent);
+  font-size: var(--text-meta);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.reportage-hero__byline span:first-child {
+  color: var(--color-cream);
+}
+
+.reportage-hero__image {
+  display: grid;
+  min-width: 0;
+  min-height: 0;
+  margin: 0;
+  overflow: hidden;
+  background: #0a241d;
+  grid-template-rows: minmax(0, 1fr) auto;
+}
+
+.reportage-hero__image img {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+.reportage-intro,
+.reportage-prose {
+  width: min(calc(100% - 2rem), 44rem);
+  margin-inline: auto;
+}
+
+.reportage-intro {
+  padding-block: clamp(6rem, 11vw, 11rem);
+}
+
+.reportage-intro p {
+  max-width: 68ch;
+  margin: 0;
+  font-size: clamp(1.35rem, 2vw, 1.7rem);
+  line-height: 1.58;
+}
+
+.reportage-chapter {
+  padding-block: clamp(5.5rem, 10vw, 10rem);
+}
+
+.reportage-chapter--cream {
+  background: var(--color-cream);
+}
+
+.reportage-chapter__number {
+  margin-bottom: 1.25rem;
+  color: var(--color-earth);
+  font-size: var(--text-meta);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.reportage-prose h2 {
+  max-width: 13ch;
+  margin-bottom: clamp(3rem, 6vw, 5.5rem);
+  font-size: clamp(3.2rem, 6vw, 5.8rem);
+  line-height: 0.94;
+}
+
+.reportage-prose p:not(.reportage-chapter__number) {
+  max-width: 70ch;
+}
+
+.reportage-prose p:last-child {
+  margin-bottom: 0;
+}
+
+.reportage-figure {
+  margin: 0;
+}
+
+.reportage-figure img {
+  width: 100%;
+  height: auto;
+}
+
+.reportage-figure--wide {
+  width: min(calc(100% - 2rem), 76rem);
+  margin: clamp(4.5rem, 8vw, 8rem) auto 0;
+}
+
+.reportage-figure--full {
+  width: min(calc(100% - 2rem), 44rem);
+  margin: clamp(4.5rem, 8vw, 8rem) auto;
+}
+
+.reportage-figure--full img {
+  max-height: 54rem;
+  object-fit: contain;
+  object-position: center;
+}
+
+.reportage-pair {
+  display: grid;
+  width: min(calc(100% - 2rem), 72rem);
+  margin: clamp(4.5rem, 8vw, 8rem) auto 0;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.25rem, 3vw, 3rem);
+  align-items: start;
+}
+
+.reportage-pair--landscape {
+  width: min(calc(100% - 2rem), 80rem);
+  align-items: center;
+}
+
+.reportage-pullquote,
+.reportage-final-quote {
+  width: min(calc(100% - 2rem), 65rem);
+  margin: clamp(5rem, 10vw, 10rem) auto;
+  text-align: center;
+}
+
+.reportage-pullquote p,
+.reportage-final-quote p {
+  max-width: none;
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 5.5vw, 5.6rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 0.98;
+  text-wrap: balance;
+}
+
+.reportage-final-quote {
+  width: min(calc(100% - 2rem), 72rem);
+  margin-top: clamp(6rem, 12vw, 12rem);
+}
+
+.reportage-final-quote p {
+  font-size: clamp(3.3rem, 7vw, 7rem);
+}
+
+.reportage-signature {
+  margin: clamp(2rem, 4vw, 3.5rem) auto 0;
+  color: var(--color-muted);
+  font-family: var(--font-quote);
+  font-size: var(--text-small);
+  font-style: italic;
+  text-align: center;
+}
+
+.reportage-transition {
+  padding-block: clamp(7rem, 12vw, 12rem);
+  color: var(--color-cream);
+  background: var(--color-forest);
+  text-align: center;
+}
+
+.reportage-transition__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reportage-transition .eyebrow {
+  color: color-mix(in srgb, var(--color-cream) 72%, transparent);
+}
+
+.reportage-transition h2 {
+  max-width: 15ch;
+  margin-inline: auto;
+}
+
+.reportage-transition p:not(.eyebrow) {
+  margin-bottom: 2rem;
+  color: color-mix(in srgb, var(--color-cream) 78%, transparent);
+}
+
+.macedonia-scene__reportage-link {
+  margin-top: 1.25rem;
+}
+
+#join-the-journey {
+  scroll-margin-top: calc(var(--header-height) + 1rem);
+}
+
+@media (max-width: 61.99rem) {
+  .reportage-hero {
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .reportage-hero__copy {
+    max-width: 46rem;
+    padding-top: calc(var(--header-height) + 5rem);
+    padding-bottom: 5rem;
+  }
+
+  .reportage-hero__image {
+    grid-template-rows: auto auto;
+  }
+
+  .reportage-hero__image img {
+    width: min(100%, 48rem);
+    height: auto;
+    max-height: 54rem;
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 47.99rem) {
+  .reportage-hero__copy {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .reportage-hero h1 {
+    font-size: clamp(4rem, 19vw, 5.4rem);
+  }
+
+  .reportage-hero__byline {
+    flex-direction: column;
+  }
+
+  .reportage-intro,
+  .reportage-prose {
+    width: min(calc(100% - 2rem), 44rem);
+  }
+
+  .reportage-intro {
+    padding-block: 5.5rem;
+  }
+
+  .reportage-chapter {
+    padding-block: 5.5rem;
+  }
+
+  .reportage-prose h2 {
+    margin-bottom: 3rem;
+    font-size: clamp(3rem, 14vw, 4.25rem);
+  }
+
+  .reportage-pair {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .reportage-pair .reportage-figure {
+    width: 100%;
+  }
+
+  .reportage-pullquote,
+  .reportage-final-quote {
+    margin-block: 5rem;
+  }
+
+  .reportage-pullquote p {
+    font-size: clamp(2.6rem, 11vw, 3.8rem);
+  }
+
+  .reportage-final-quote p {
+    font-size: clamp(3.1rem, 13vw, 4.5rem);
+  }
+}
+
+@media print {
+  .reportage-hero {
+    min-height: 0;
+    color: #000;
+    background: #fff;
+    grid-template-columns: 1fr;
+  }
+
+  .reportage-hero__copy,
+  .reportage-intro,
+  .reportage-chapter,
+  .reportage-transition {
+    padding-block: 2rem;
+  }
+
+  .reportage-hero__image {
+    display: none;
+  }
+}
